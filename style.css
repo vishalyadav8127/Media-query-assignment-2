@@ -1,0 +1,186 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color:#111827 ;
+    color: white;
+}
+nav{
+    margin: 30px;
+}
+img:hover{
+    cursor: pointer;
+}
+nav ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    align-items: center;
+    gap: 20px;
+    text-decoration: none;
+}
+nav ul li{
+    font-size: 25px;
+    list-style: none;
+    cursor: pointer;
+}
+.menu{
+    width: 30px;
+    display: none;
+}
+.home-option{
+    padding: 5px 10px;
+    background-color: blue;
+    border-radius: 15px;
+}
+.intro{
+    max-width: 100vh;
+    margin: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+.left-intro{
+    margin-left: 90vh;
+
+}
+.intro-line-1{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    font-size: 30px;
+}
+.intro-line-2{
+    display: flex;
+    flex-direction:column ;
+    justify-content: center;
+    gap: 10px;
+}
+.intro-line-2 h1{
+    font-size: 80px;
+}
+.intro-line-2 h3{
+    font-size: 60px;
+    color:rgb(177, 177, 41);
+}
+.waving-hand{
+    width: 45px;
+    
+}
+.intro-right img{ 
+    width:60vh ;
+}
+.projects{
+    margin-top: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.projects  div h1{
+    font-size: 30px;
+    margin: 10px
+}
+.horizontal-divider{
+    height: 8px;
+    width: 135px;
+    background-color: blue;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+.project-list{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+    row-gap: 20px;
+    column-gap: 20px;
+}
+.project img{
+    width: 200px;
+}
+.project{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.contact{
+    margin: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+.contact div h1{
+    font-size: 40px;
+}
+.horizontal-divider-contact{
+    height: 8px;
+    width: 200px;
+    background-color: blue;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+.socials{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+.socials img{
+    width: 30px;
+} 
+@media screen and (max-width:576px){
+    nav ul{
+        display: none;
+    }
+    .menu{display: block;
+    } 
+    .intro{
+        display: inline;
+    }
+    .left-intro{
+        
+        float:left;
+        margin:10px
+        
+    }
+    .intro-line-1{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 1px;
+        font-size: 20px;
+        text-align: center;
+        margin-left: 30px;
+    }
+    .intro-line-2{
+        display: flex;
+        float:right;
+        justify-content: left;
+        gap: 5px;
+    }
+    .intro-line-2 h1{
+        font-size: 30px;
+        
+    }
+    .intro-line-2 h3{
+        font-size:30px;
+    }
+    .intro-right img {
+        height: 250px;
+        width: 200px;
+        margin-left: 50px;
+    }
+    .project-list{
+        display: inline;
+    }
+    .project img{
+        height: 20vh;
+        width: 15vh;
+    }
+} 
